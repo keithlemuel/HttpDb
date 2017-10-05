@@ -27,7 +27,7 @@ export class RemovepersonComponent implements OnInit {
          (error) => console.log(error)
        );
 
-       
+     alert("Data Deleted Successfully");  
   }
   
 }

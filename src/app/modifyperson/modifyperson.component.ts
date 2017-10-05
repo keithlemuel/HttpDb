@@ -48,16 +48,7 @@ export class ModifypersonComponent implements OnInit {
          (response) => console.log(response),
          (error) => console.log(error)
        );
-  }
-
-  deleteData(id){
-      this.dbService.deleteData(`${this.baseURL}/${this.rootNode}/${id}.json`)
-       .subscribe(
-         (response) => console.log(response),
-         (error) => console.log(error)
-       );
-
-       
+        alert("Editing Successful");
   }
 
 }

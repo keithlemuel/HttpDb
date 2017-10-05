@@ -3,6 +3,7 @@ import { DbService} from '../services/db.service';
 import { IPerson } from '../interfaces/iperson';
 import { NgForm } from '@angular/forms';
 
+
 @Component({
   selector: 'app-addperson',
   templateUrl: './addperson.component.html',
@@ -28,6 +29,7 @@ export class AddpersonComponent implements OnInit {
       (response) => console.log(response),
       (error) => console.log(error)
     )
+    alert("Person is Added Successfully");
   }
 
 }
