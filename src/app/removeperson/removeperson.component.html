@@ -1,5 +1,5 @@
 <div class="container">
   <DIV class="row">
-    <app-listing (deleteClicked)="deleteData($event)"></app-listing>
+    <app-listing [delete]="delete" (deleteClicked)="deleteData($event)"></app-listing>
   </DIV>
 </div>

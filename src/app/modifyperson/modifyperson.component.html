@@ -15,6 +15,6 @@
     </form>  
   </div>
   <DIV class="row">
-    <app-listing (modifyClicked)="editData($event)"></app-listing>
+    <app-listing [update] = "update" (modifyClicked)="editData($event)"></app-listing>
   </DIV>
 </div>

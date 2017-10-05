@@ -18,6 +18,8 @@ export class ListingComponent implements OnInit {
 
   baseURL = 'https://firstfirebase-ad899.firebaseio.com/';
   rootNode = 'people';
+  @Input() update: boolean;
+  @Input() delete: boolean;
   peopleCollection: Array<IPerson> = [];
 
   constructor(private dbservice: DbService) { }

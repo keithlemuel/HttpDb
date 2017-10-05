@@ -14,10 +14,10 @@
       <td>{{ person.firstName }}</td>
       <td>{{ person.lastName }}</td>
       <td>
-        <button  (click)="modifyData(person.id)" class="btn btn-warning">
+        <button  *ngIf="update" (click)="modifyData(person.id)" class="btn btn-warning">
            Edit 
         </button>
-        <button  (click)="deleteData(person.id)" class="btn btn-danger">
+        <button *ngIf="delete" (click)="deleteData(person.id)" class="btn btn-danger">
            Delete 
         </button>  
       </td>
